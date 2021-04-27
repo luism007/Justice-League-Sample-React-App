@@ -1,0 +1,25 @@
+.hero-list-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.hero-box-container {
+  height: 150px;
+  width: 200px;
+}
+.hero-logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-card-holder {
+  margin: 0 2%;
+}
+
+.hero-card-holder:hover {
+  cursor: pointer;
+}

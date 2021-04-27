@@ -1,0 +1,41 @@
+.hero-info-container {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  height: 550px;
+  width: 100%;
+  box-shadow: 1px 25px 62px rgb(0 0 0 / 20%);
+}
+
+.side-panel-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hero-name-container,
+.hero-secret-identity-container,
+.hero-birth-place-container,
+.hero-bio-container {
+  width: 100%;
+  margin: 1 auto;
+  color: white;
+  font-size: 20px;
+}
+
+.hero-image {
+  display: block;
+  width: 400px;
+  height: 499px;
+}
+
+.hero-name {
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 0px 13px 7px rgb(0 0 0 / 20%);
+}
