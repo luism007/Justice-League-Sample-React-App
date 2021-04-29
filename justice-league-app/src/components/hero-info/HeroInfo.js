@@ -6,10 +6,12 @@ class HeroInfo extends React.Component {
   constructor(props) {
     super(props);
 
+    // define initial state
     this.state = {
       hero: {},
     };
 
+    // declare your custom methods
     this.getClickedHero = this.getClickedHero.bind(this);
     this.renderHeroImage = this.renderHeroImage.bind(this);
     this.renderHeroBackgroundImage = this.renderHeroBackgroundImage.bind(this);
@@ -30,7 +32,7 @@ class HeroInfo extends React.Component {
 
   componentWillUnmount() {
     this.subscription$.unsubscribe();
-    console.log("Destory This Component");
+    console.log("Destroy This Component");
   }
 
   getClickedHero() {
