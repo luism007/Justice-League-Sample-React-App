@@ -22,6 +22,7 @@ class HeroList extends React.Component {
   // Any initialization of data being received from a remote endpoint ...
   // ... be placed here.
   componentDidMount() {
+    console.log("ComponentDid Mount");
     // Makes call to get heroes!
     this.getHeroes();
   }
@@ -52,6 +53,7 @@ class HeroList extends React.Component {
   render() {
     return (
       <div className="hero-list-container">
+        {console.log("Render called")}
         {this.state.heroList.map((hero, index) => (
           <div
             key={index}
