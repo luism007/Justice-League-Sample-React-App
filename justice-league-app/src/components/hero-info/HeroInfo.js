@@ -21,7 +21,7 @@ const HeroInfo = (props) => {
     >
       <div className="side-panel-container">
         <div className="hero-image-container">
-          <img class="hero-image" src={renderHeroImage(hero.name)}></img>
+          <img className="hero-image" src={renderHeroImage(hero.name)}></img>
         </div>
       </div>
       <div className="side-panel-container">
