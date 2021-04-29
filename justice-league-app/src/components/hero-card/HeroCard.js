@@ -1,6 +1,14 @@
+import React, { useEffect } from "react";
+
 import "./HeroCardStyles.css";
 
 const HeroCard = (props) => {
+  useEffect(() => {
+    // console.log("Hero Card Component Rendered!");
+    return () => {
+      // console.log("Hero Card Component Removed From DOM");
+    };
+  });
   return (
     <div key={props.id} className="hero-box-container">
       <div

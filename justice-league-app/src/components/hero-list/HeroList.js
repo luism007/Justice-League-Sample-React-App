@@ -28,7 +28,9 @@ class HeroList extends React.Component {
 
   // Unmounting Lifecycle Methods
   // This method is called when the component is removed from the DOM
-  componentWillUnmount() {}
+  componentWillUnmount() {
+    console.log("Destroy Hero List component...");
+  }
 
   // User-defined methods
   getHeroes() {
