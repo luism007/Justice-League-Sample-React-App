@@ -32,7 +32,7 @@ class HeroInfo extends React.Component {
 
   componentWillUnmount() {
     this.subscription$.unsubscribe();
-    console.log("Destroy This Component");
+    console.log("Destroy Hero Info Component...");
   }
 
   getClickedHero() {
