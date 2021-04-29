@@ -3,8 +3,9 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const app = express();
 const port = 4001;
-
-const dbConnectionString = "mongodb://localhost:27017/justice-league-app";
+const env = process.env.NODE_ENV || "development";
+const config = require("../config")[env];
+const dbConnectionString = `mongodb://${config.database.host}${config.database.port}/${config.database.db}`;
 const Hero = require("./models/HeroSchema");
 
 // Connect to MongoDB
@@ -39,5 +40,7 @@ app.get("/heroes", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example App Listening at http://localhost:${port}`);
+  console.log(
+    `Example App Listening at ${config.server.url}${config.server.host}${config.server.port}`
+  );
 });
