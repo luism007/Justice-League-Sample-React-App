@@ -9,7 +9,10 @@ class HeroList extends React.Component {
   constructor(props) {
     super(props);
 
+    // Set initial state
     this.state = { heroList: [] };
+
+    // Setup the my own custom methods to use.
 
     this.getHeroes = this.getHeroes.bind(this);
     this.clickedHero = this.clickedHero.bind(this);
@@ -25,7 +28,6 @@ class HeroList extends React.Component {
 
   // Unmounting Lifecycle Methods
   // This method is called when the component is removed from the DOM
-
   componentWillUnmount() {}
 
   // User-defined methods
@@ -34,7 +36,6 @@ class HeroList extends React.Component {
       .then((response) => response.json())
       .then((response) => {
         this.setState({ heroList: response });
-        console.log("State", this.state);
       })
       .catch((error) => {
         alert("No Heroes :( ");
